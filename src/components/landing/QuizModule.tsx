@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ScrollReveal from "./ScrollReveal";
 import { Target, ArrowRight, ArrowUpRight, RotateCcw } from "lucide-react";
+import aiBrainImage from "@/assets/ai-brain.jpg";
 
 const BASE = "https://affiliatemarketingforsuccess.com";
 
@@ -129,8 +130,14 @@ const QuizModule = () => {
   };
 
   return (
-    <section id="quiz" className="py-24">
-      <div className="container">
+    <section id="quiz" className="py-24 relative overflow-hidden">
+      {/* Decorative background */}
+      <div className="absolute inset-0 pointer-events-none">
+        <img src={aiBrainImage} alt="" className="w-full h-full object-cover opacity-[0.07]" loading="lazy" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background" />
+      </div>
+
+      <div className="container relative z-10">
         <ScrollReveal>
           <div className="max-w-2xl mx-auto">
             <div className="text-center mb-10">
