@@ -1,5 +1,6 @@
 import ScrollReveal from "./ScrollReveal";
 import { Search, Calculator, Lightbulb, Link2, Timer, Mail, GitCompare, Cpu, ArrowUpRight } from "lucide-react";
+import toolsImage from "@/assets/tools-float.jpg";
 
 const BASE = "https://affiliatemarketingforsuccess.com";
 
