@@ -17,14 +17,27 @@ const PopularGuides = () => (
   <section className="py-24">
     <div className="container">
       <ScrollReveal>
-        <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/30 bg-primary/10 mb-4">
-            <Trophy className="w-3.5 h-3.5 text-primary" />
-            <span className="text-sm font-semibold text-primary tracking-wide">MOST POPULAR</span>
+        <div className="flex flex-col lg:flex-row items-center gap-12 mb-14">
+          <div className="w-full max-w-xs lg:max-w-sm flex-shrink-0 order-2 lg:order-1">
+            <img
+              src={analyticsImage}
+              alt="Performance analytics dashboard"
+              className="w-full rounded-2xl shadow-2xl shadow-primary/10 border border-border"
+              loading="lazy"
+            />
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-balance">
-            Guides readers come back to
-          </h2>
+          <div className="flex-1 text-center lg:text-left order-1 lg:order-2">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/30 bg-primary/10 mb-4">
+              <Trophy className="w-3.5 h-3.5 text-primary" />
+              <span className="text-sm font-semibold text-primary tracking-wide">MOST POPULAR</span>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-balance">
+              Guides readers come back to
+            </h2>
+            <p className="text-muted-foreground mt-4 max-w-lg text-pretty">
+              Our highest-performing cornerstone content — proven to drive results.
+            </p>
+          </div>
         </div>
       </ScrollReveal>
 
