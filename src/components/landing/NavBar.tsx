@@ -1,7 +1,18 @@
 import { useState, useEffect } from "react";
+import { Menu, X } from "lucide-react";
+
+const BASE = "https://affiliatemarketingforsuccess.com";
+
+const links = [
+  { label: "Knowledge Base", href: "#knowledge-base" },
+  { label: "Tools", href: `${BASE}/tools/nexus-ai-free-seo-toolkit/`, external: true },
+  { label: "Quiz", href: "#quiz" },
+  { label: "Blog", href: `${BASE}/blog/`, external: true },
+];
 
 const NavBar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -16,31 +27,21 @@ const NavBar = () => {
       }`}
     >
       <div className="container flex items-center justify-between h-16">
-        <a
-          href="https://affiliatemarketingforsuccess.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-2"
-        >
+        <a href={BASE} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
           <span className="w-2.5 h-2.5 rounded-full bg-primary" />
           <span className="text-sm font-bold tracking-wide">
             <span className="text-primary">AFS</span>{" "}
-            <span className="text-foreground">Content Hub</span>
+            <span className="text-foreground">Knowledge Hub</span>
           </span>
         </a>
 
         <nav className="hidden md:flex items-center gap-6">
-          {[
-            { label: "Guides", href: "#guides" },
-            { label: "How to Start", href: "https://affiliatemarketingforsuccess.com/how-to-start/" },
-            { label: "SEO", href: "https://affiliatemarketingforsuccess.com/seo/" },
-            { label: "AI", href: "https://affiliatemarketingforsuccess.com/ai/" },
-          ].map((link) => (
+          {links.map((link) => (
             <a
               key={link.label}
               href={link.href}
-              target={link.href.startsWith("#") ? undefined : "_blank"}
-              rel={link.href.startsWith("#") ? undefined : "noopener noreferrer"}
+              target={link.external ? "_blank" : undefined}
+              rel={link.external ? "noopener noreferrer" : undefined}
               className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200"
             >
               {link.label}
@@ -48,15 +49,42 @@ const NavBar = () => {
           ))}
         </nav>
 
-        <a
-          href="https://affiliatemarketingforsuccess.com/affiliate-growth-checklist/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="px-4 py-2 rounded-lg bg-primary text-primary-foreground text-sm font-semibold transition-all duration-200 hover:brightness-110 active:scale-[0.97]"
-        >
-          Free Launch Kit
-        </a>
+        <div className="flex items-center gap-3">
+          <a
+            href={`${BASE}/affiliate-growth-checklist/`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-2 rounded-lg bg-primary text-primary-foreground text-sm font-semibold transition-all duration-200 hover:brightness-110 active:scale-[0.97]"
+          >
+            Free Launch Kit
+          </a>
+          <button
+            onClick={() => setMobileOpen(!mobileOpen)}
+            className="md:hidden p-2 text-muted-foreground hover:text-foreground transition-colors"
+          >
+            {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+          </button>
+        </div>
       </div>
+
+      {mobileOpen && (
+        <div className="md:hidden border-t border-border bg-background/95 backdrop-blur-md">
+          <div className="container py-4 space-y-3">
+            {links.map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                target={link.external ? "_blank" : undefined}
+                rel={link.external ? "noopener noreferrer" : undefined}
+                onClick={() => setMobileOpen(false)}
+                className="block text-sm text-muted-foreground hover:text-foreground py-2 transition-colors"
+              >
+                {link.label}
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
     </header>
   );
 };
