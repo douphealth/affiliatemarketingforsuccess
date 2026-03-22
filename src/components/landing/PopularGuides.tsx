@@ -1,5 +1,6 @@
 import ScrollReveal from "./ScrollReveal";
-import { Trophy, ArrowUpRight, Clock, Star } from "lucide-react";
+import { Trophy, ArrowUpRight, Clock } from "lucide-react";
+import analyticsImage from "@/assets/analytics-viz.jpg";
 
 const BASE = "https://affiliatemarketingforsuccess.com";
 
