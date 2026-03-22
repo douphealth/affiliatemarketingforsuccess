@@ -19,14 +19,24 @@ const ToolsShowcase = () => (
   <section className="py-24">
     <div className="container">
       <ScrollReveal>
-        <div className="text-center mb-12">
-          <p className="text-sm font-semibold text-primary tracking-widest uppercase mb-3">Free Tools</p>
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-balance">
-            AI-powered tools — use them right now
-          </h2>
-          <p className="text-muted-foreground mt-4 max-w-lg mx-auto text-pretty">
-            Eight free tools to accelerate your affiliate marketing workflow. No signup required.
-          </p>
+        <div className="flex flex-col lg:flex-row items-center gap-12 mb-14">
+          <div className="flex-1 text-center lg:text-left">
+            <p className="text-sm font-semibold text-primary tracking-widest uppercase mb-3">Free Tools</p>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-balance">
+              AI-powered tools — use them right now
+            </h2>
+            <p className="text-muted-foreground mt-4 max-w-lg text-pretty">
+              Eight free tools to accelerate your affiliate marketing workflow. No signup required.
+            </p>
+          </div>
+          <div className="w-full max-w-xs lg:max-w-sm flex-shrink-0">
+            <img
+              src={toolsImage}
+              alt="Marketing toolkit visualization"
+              className="w-full rounded-2xl shadow-2xl shadow-primary/10 border border-border"
+              loading="lazy"
+            />
+          </div>
         </div>
       </ScrollReveal>
 
