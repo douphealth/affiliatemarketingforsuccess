@@ -3,8 +3,10 @@ import HeroSection from "@/components/landing/HeroSection";
 import AuthorityBlock from "@/components/landing/AuthorityBlock";
 import PathwayCards from "@/components/landing/PathwayCards";
 import QuizModule from "@/components/landing/QuizModule";
+import ReadinessQuiz from "@/components/landing/ReadinessQuiz";
 import TopicClusterHub from "@/components/landing/TopicClusterHub";
 import ToolsShowcase from "@/components/landing/ToolsShowcase";
+import AIToolQuiz from "@/components/landing/AIToolQuiz";
 import PopularGuides from "@/components/landing/PopularGuides";
 import EmailCapture from "@/components/landing/EmailCapture";
 import ComparisonsSection from "@/components/landing/ComparisonsSection";
@@ -21,8 +23,10 @@ const Index = () => {
       <AuthorityBlock />
       <PathwayCards />
       <QuizModule />
+      <ReadinessQuiz />
       <TopicClusterHub />
       <ToolsShowcase />
+      <AIToolQuiz />
       <PopularGuides />
       <EmailCapture />
       <ComparisonsSection />
