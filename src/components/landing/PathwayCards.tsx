@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ScrollReveal from "./ScrollReveal";
 import { Rocket, TrendingUp, Bot, Wrench, ChevronDown, ChevronUp, ArrowUpRight } from "lucide-react";
+import pathwayImage from "@/assets/pathway-journey.jpg";
 
 const BASE = "https://affiliatemarketingforsuccess.com";
 
