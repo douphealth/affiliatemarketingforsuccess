@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ScrollReveal from "./ScrollReveal";
 import { Target, ArrowRight, ArrowUpRight, RotateCcw } from "lucide-react";
+import aiBrainImage from "@/assets/ai-brain.jpg";
 
 const BASE = "https://affiliatemarketingforsuccess.com";
 
