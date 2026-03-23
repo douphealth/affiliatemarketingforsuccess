@@ -120,7 +120,7 @@ const HeroSection = () => {
           </ScrollReveal>
 
           <ScrollReveal delay={380}>
-            <div className="flex gap-8 mt-14">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-8 mt-10 sm:mt-14">
               {[
                 { num: "190+", label: "Expert Guides" },
                 { num: "8", label: "Free Tools" },
@@ -128,8 +128,8 @@ const HeroSection = () => {
                 { num: "7", label: "Topic Clusters" },
               ].map((stat) => (
                 <div key={stat.label}>
-                  <div className="text-2xl font-bold tabular-nums text-foreground">{stat.num}</div>
-                  <div className="text-sm text-muted-foreground">{stat.label}</div>
+                  <div className="text-xl sm:text-2xl font-bold tabular-nums text-foreground">{stat.num}</div>
+                  <div className="text-xs sm:text-sm text-muted-foreground">{stat.label}</div>
                 </div>
               ))}
             </div>
