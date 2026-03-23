@@ -185,9 +185,9 @@ const NicheProfiler = () => {
                     { icon: Users, label: "Monthly Searches", value: selected.monthlySearchVolume, color: "text-accent" },
                     { icon: BarChart3, label: "Competition", value: `${selected.competition}/5`, color: "text-orange-400" },
                   ].map((stat) => (
-                    <div key={stat.label} className="bg-card p-5 text-center">
-                      <stat.icon className={`w-5 h-5 ${stat.color} mx-auto mb-2`} />
-                      <p className="text-lg font-extrabold tabular-nums">{stat.value}</p>
+                    <div key={stat.label} className="bg-card p-3 sm:p-5 text-center">
+                      <stat.icon className={`w-4 sm:w-5 h-4 sm:h-5 ${stat.color} mx-auto mb-1 sm:mb-2`} />
+                      <p className="text-sm sm:text-lg font-extrabold tabular-nums break-words">{stat.value}</p>
                       <p className="text-xs text-muted-foreground mt-0.5">{stat.label}</p>
                     </div>
                   ))}
