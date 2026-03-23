@@ -200,7 +200,8 @@ const AIToolQuiz = () => {
                     </a>
                   </div>
                 </div>
-              )}
+                );
+              })()}
             </div>
           </div>
         </ScrollReveal>
