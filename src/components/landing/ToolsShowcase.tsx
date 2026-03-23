@@ -46,15 +46,15 @@ const ToolsShowcase = () => {
               Eight enterprise-grade tools. Zero cost. No signup required. Start using them right now.
             </p>
 
-            <div className="flex items-center justify-center gap-8 mt-8">
+            <div className="flex items-center justify-center gap-6 sm:gap-8 mt-6 sm:mt-8">
               {[
                 { value: "8", label: "Free Tools" },
                 { value: "47K+", label: "Monthly Users" },
                 { value: "4.9★", label: "Avg Rating" },
               ].map((stat) => (
                 <div key={stat.label} className="text-center">
-                  <p className="text-2xl font-black text-primary tabular-nums">{stat.value}</p>
-                  <p className="text-xs text-muted-foreground font-medium mt-0.5">{stat.label}</p>
+                  <p className="text-xl sm:text-2xl font-black text-primary tabular-nums">{stat.value}</p>
+                  <p className="text-[10px] sm:text-xs text-muted-foreground font-medium mt-0.5">{stat.label}</p>
                 </div>
               ))}
             </div>
