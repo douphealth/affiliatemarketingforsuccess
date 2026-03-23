@@ -108,7 +108,7 @@ const ToolsShowcase = () => {
         {/* Bottom CTA - links to /tools */}
         <ScrollReveal delay={600}>
           <div className="mt-14 text-center">
-            <div className="inline-flex flex-col items-center gap-3 p-8 rounded-3xl border border-border bg-card/80 backdrop-blur-sm">
+            <div className="inline-flex flex-col items-center gap-3 p-6 sm:p-8 rounded-3xl border border-border bg-card/80 backdrop-blur-sm">
               <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary to-accent flex items-center justify-center shadow-lg shadow-primary/20 mb-1">
                 <Cpu className="w-7 h-7 text-primary-foreground" />
               </div>

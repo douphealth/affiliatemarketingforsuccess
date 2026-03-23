@@ -55,7 +55,7 @@ const NavBar = () => {
             href={`${BASE}/affiliate-growth-checklist/`}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-4 py-2 rounded-lg bg-primary text-primary-foreground text-sm font-semibold transition-all duration-200 hover:brightness-110 active:scale-[0.97]"
+            className="px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg bg-primary text-primary-foreground text-xs sm:text-sm font-semibold transition-all duration-200 hover:brightness-110 active:scale-[0.97]"
           >
             Free Launch Kit
           </a>

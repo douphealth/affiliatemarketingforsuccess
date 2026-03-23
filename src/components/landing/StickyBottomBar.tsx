@@ -21,7 +21,7 @@ const StickyBottomBar = () => {
           href={`${BASE}/affiliate-marketing/beginners-guide/`}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 px-4 py-2 rounded-lg bg-primary text-primary-foreground text-sm font-semibold hover:brightness-110 transition-all active:scale-[0.97]"
+          className="flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2 rounded-lg bg-primary text-primary-foreground text-xs sm:text-sm font-semibold hover:brightness-110 transition-all active:scale-[0.97]"
         >
           <Rocket className="w-3.5 h-3.5" /> Start Here
         </a>

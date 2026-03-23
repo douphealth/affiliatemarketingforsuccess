@@ -17,8 +17,8 @@ const PopularGuides = () => (
   <section className="py-24">
     <div className="container">
       <ScrollReveal>
-        <div className="flex flex-col lg:flex-row items-center gap-12 mb-14">
-          <div className="w-full max-w-xs lg:max-w-sm flex-shrink-0 order-2 lg:order-1">
+        <div className="flex flex-col lg:flex-row items-center gap-8 sm:gap-12 mb-10 sm:mb-14">
+          <div className="w-full max-w-[200px] sm:max-w-xs lg:max-w-sm flex-shrink-0 order-2 lg:order-1">
             <img
               src={analyticsImage}
               alt="Performance analytics dashboard"

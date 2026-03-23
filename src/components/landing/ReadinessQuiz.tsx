@@ -236,7 +236,7 @@ const ReadinessQuiz = () => {
               <div className="absolute -bottom-20 -left-20 w-40 h-40 bg-accent/8 rounded-full blur-3xl pointer-events-none" />
 
               {!done ? (
-                <div className="p-8 md:p-10">
+                <div className="p-5 sm:p-8 md:p-10">
                   {/* Progress */}
                   <div className="flex items-center gap-1.5 mb-2">
                     {questions.map((_, i) => (

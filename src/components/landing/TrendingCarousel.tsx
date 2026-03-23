@@ -84,7 +84,7 @@ const TrendingCarousel = () => {
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-accent" />
                 </span>
               </div>
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-balance">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-balance">
                 Trending right now
               </h2>
               <p className="text-muted-foreground mt-2 max-w-md text-pretty">

@@ -208,7 +208,7 @@ const NicheProfiler = () => {
                 </div>
 
                 {/* Recommended reading */}
-                <div className="p-8">
+                <div className="p-5 sm:p-8">
                   <h4 className="text-sm font-bold mb-4 flex items-center gap-2">
                     <Zap className="w-4 h-4 text-accent" /> Start with these guides
                   </h4>

@@ -55,7 +55,7 @@ const HeroSection = () => {
           </ScrollReveal>
 
           <ScrollReveal delay={80}>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[0.95] text-balance mb-6">
+            <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[0.95] text-balance mb-4 sm:mb-6">
               Master Affiliate Marketing with AI-Powered Strategies
             </h1>
           </ScrollReveal>

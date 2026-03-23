@@ -178,7 +178,7 @@ const AIToolQuiz = () => {
                           href={t.guide.href}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex items-center gap-2 ml-14 text-sm font-semibold text-primary hover:underline group"
+                          className="flex items-center gap-2 ml-0 sm:ml-14 mt-2 sm:mt-0 text-sm font-semibold text-primary hover:underline group"
                         >
                           📖 {t.guide.title}
                           <ArrowUpRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
