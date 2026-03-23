@@ -156,12 +156,12 @@ const NicheProfiler = () => {
             ) : (
               <div className="rounded-3xl border border-border bg-card/90 backdrop-blur-sm shadow-2xl shadow-accent/5 overflow-hidden">
                 {/* Header */}
-                <div className="p-8 border-b border-border bg-gradient-to-r from-accent/5 via-transparent to-accent/5">
-                  <div className="flex items-start justify-between">
-                    <div className="flex items-center gap-4">
-                      <span className="text-4xl">{selected.emoji}</span>
+                <div className="p-5 sm:p-8 border-b border-border bg-gradient-to-r from-accent/5 via-transparent to-accent/5">
+                  <div className="flex flex-col sm:flex-row items-start justify-between gap-3">
+                    <div className="flex items-center gap-3 sm:gap-4">
+                      <span className="text-3xl sm:text-4xl">{selected.emoji}</span>
                       <div>
-                        <h3 className="text-2xl font-extrabold">{selected.name}</h3>
+                        <h3 className="text-xl sm:text-2xl font-extrabold">{selected.name}</h3>
                         <span className={`inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-bold mt-1 ${
                           selected.difficulty === "Low" ? "bg-emerald-500/15 text-emerald-400" :
                           selected.difficulty === "Medium" ? "bg-primary/15 text-primary" :
