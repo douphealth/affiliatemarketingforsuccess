@@ -5,8 +5,9 @@ const BASE = "https://affiliatemarketingforsuccess.com";
 
 const links = [
   { label: "Knowledge Base", href: "#knowledge-base" },
-  { label: "Tools", href: `${BASE}/tools/nexus-ai-free-seo-toolkit/`, external: true },
+  { label: "Tools", href: `${BASE}/tools/`, external: true },
   { label: "Quiz", href: "#quiz" },
+  { label: "Niche Profiler", href: "#niche-profiler" },
   { label: "Blog", href: `${BASE}/blog/`, external: true },
 ];
 
@@ -30,8 +31,8 @@ const NavBar = () => {
         <a href={BASE} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
           <span className="w-2.5 h-2.5 rounded-full bg-primary" />
           <span className="text-sm font-bold tracking-wide">
-            <span className="text-primary">AFS</span>{" "}
-            <span className="text-foreground">Knowledge Hub</span>
+            <span className="text-primary">AFFILIATE MARKETING</span>{" "}
+            <span className="text-foreground">FOR SUCCESS</span>
           </span>
         </a>
 

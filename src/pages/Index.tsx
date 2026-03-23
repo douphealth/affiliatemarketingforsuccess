@@ -8,6 +8,7 @@ import TopicClusterHub from "@/components/landing/TopicClusterHub";
 import TrendingCarousel from "@/components/landing/TrendingCarousel";
 import ToolsShowcase from "@/components/landing/ToolsShowcase";
 import AIToolQuiz from "@/components/landing/AIToolQuiz";
+import NicheProfiler from "@/components/landing/NicheProfiler";
 import PopularGuides from "@/components/landing/PopularGuides";
 import EmailCapture from "@/components/landing/EmailCapture";
 import ComparisonsSection from "@/components/landing/ComparisonsSection";
@@ -25,6 +26,7 @@ const Index = () => {
       <PathwayCards />
       <QuizModule />
       <ReadinessQuiz />
+      <NicheProfiler />
       <TopicClusterHub />
       <TrendingCarousel />
       <ToolsShowcase />
