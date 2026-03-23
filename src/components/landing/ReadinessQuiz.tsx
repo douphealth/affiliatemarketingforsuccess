@@ -282,9 +282,9 @@ const ReadinessQuiz = () => {
               ) : (
                 <div>
                   {/* Score hero */}
-                  <div className="p-8 md:p-10 text-center border-b border-border bg-gradient-to-br from-secondary/30 to-transparent">
+                  <div className="p-5 sm:p-8 md:p-10 text-center border-b border-border bg-gradient-to-br from-secondary/30 to-transparent">
                     <div className="relative inline-block mb-4">
-                      <svg width="160" height="160" viewBox="0 0 160 160" className="drop-shadow-2xl">
+                      <svg width="130" height="130" viewBox="0 0 160 160" className="drop-shadow-2xl sm:w-[160px] sm:h-[160px]">
                         <circle cx="80" cy="80" r="70" fill="none" stroke="hsl(var(--secondary))" strokeWidth="8" />
                         <circle
                           cx="80" cy="80" r="70"
