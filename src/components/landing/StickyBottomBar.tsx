@@ -16,7 +16,7 @@ const StickyBottomBar = () => {
 
   return (
     <div className="fixed bottom-0 left-0 right-0 z-50 border-t border-border bg-background/95 backdrop-blur-md">
-      <div className="container flex items-center justify-between py-3 gap-4">
+      <div className="container flex items-center justify-between py-2 sm:py-3 gap-2 sm:gap-4">
         <a
           href={`${BASE}/affiliate-marketing/beginners-guide/`}
           target="_blank"
