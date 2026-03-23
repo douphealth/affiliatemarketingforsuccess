@@ -5,6 +5,7 @@ import PathwayCards from "@/components/landing/PathwayCards";
 import QuizModule from "@/components/landing/QuizModule";
 import ReadinessQuiz from "@/components/landing/ReadinessQuiz";
 import TopicClusterHub from "@/components/landing/TopicClusterHub";
+import TrendingCarousel from "@/components/landing/TrendingCarousel";
 import ToolsShowcase from "@/components/landing/ToolsShowcase";
 import AIToolQuiz from "@/components/landing/AIToolQuiz";
 import PopularGuides from "@/components/landing/PopularGuides";
@@ -25,6 +26,7 @@ const Index = () => {
       <QuizModule />
       <ReadinessQuiz />
       <TopicClusterHub />
+      <TrendingCarousel />
       <ToolsShowcase />
       <AIToolQuiz />
       <PopularGuides />
