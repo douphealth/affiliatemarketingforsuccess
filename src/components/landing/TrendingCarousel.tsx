@@ -118,7 +118,7 @@ const TrendingCarousel = () => {
                 href={article.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex-shrink-0 w-[340px] rounded-2xl border border-border bg-card/80 backdrop-blur-sm hover:border-primary/40 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-500 active:scale-[0.97] overflow-hidden"
+                className="group flex-shrink-0 w-[280px] sm:w-[340px] rounded-2xl border border-border bg-card/80 backdrop-blur-sm hover:border-primary/40 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-500 active:scale-[0.97] overflow-hidden"
                 onMouseEnter={() => setIsPaused(true)}
                 onMouseLeave={() => setIsPaused(false)}
               >
