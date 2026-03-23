@@ -147,14 +147,14 @@ const AIToolQuiz = () => {
                 const MetaIcon = meta!.icon;
                 return (
                 <div>
-                  <div className="flex items-start justify-between mb-6">
+                  <div className="flex flex-col sm:flex-row items-start justify-between gap-3 mb-6">
                     <div className="flex items-center gap-3">
-                      <div className={`w-12 h-12 rounded-2xl bg-gradient-to-br ${meta!.gradient} flex items-center justify-center shadow-lg`}>
-                        <MetaIcon className="w-6 h-6 text-white" />
+                      <div className={`w-10 sm:w-12 h-10 sm:h-12 rounded-2xl bg-gradient-to-br ${meta!.gradient} flex items-center justify-center shadow-lg flex-shrink-0`}>
+                        <MetaIcon className="w-5 sm:w-6 h-5 sm:h-6 text-white" />
                       </div>
                       <div>
-                        <h3 className="text-xl font-extrabold">{result.title}</h3>
-                        <p className="text-sm text-muted-foreground mt-0.5 leading-relaxed">{result.desc}</p>
+                        <h3 className="text-lg sm:text-xl font-extrabold">{result.title}</h3>
+                        <p className="text-xs sm:text-sm text-muted-foreground mt-0.5 leading-relaxed">{result.desc}</p>
                       </div>
                     </div>
                     <button onClick={() => setSelected(null)} className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors active:scale-[0.95] flex-shrink-0 px-3 py-1.5 rounded-lg hover:bg-secondary/50">
