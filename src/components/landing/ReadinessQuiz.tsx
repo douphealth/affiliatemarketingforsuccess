@@ -316,9 +316,9 @@ const ReadinessQuiz = () => {
                   </div>
 
                   {/* Skill breakdown */}
-                  <div className="p-8 md:p-10 border-b border-border">
+                  <div className="p-5 sm:p-8 md:p-10 border-b border-border">
                     <p className="text-sm font-bold mb-4">📊 Your skill breakdown:</p>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 sm:gap-3">
                       {categoryScores.map((cs) => (
                         <div key={cs.category} className="p-3 rounded-xl bg-secondary/30 border border-border text-center">
                           <div className="flex items-center justify-center gap-1 mb-1">
