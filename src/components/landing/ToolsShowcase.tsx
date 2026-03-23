@@ -46,22 +46,22 @@ const ToolsShowcase = () => {
               Eight enterprise-grade tools. Zero cost. No signup required. Start using them right now.
             </p>
 
-            <div className="flex items-center justify-center gap-8 mt-8">
+            <div className="flex items-center justify-center gap-6 sm:gap-8 mt-6 sm:mt-8">
               {[
                 { value: "8", label: "Free Tools" },
                 { value: "47K+", label: "Monthly Users" },
                 { value: "4.9★", label: "Avg Rating" },
               ].map((stat) => (
                 <div key={stat.label} className="text-center">
-                  <p className="text-2xl font-black text-primary tabular-nums">{stat.value}</p>
-                  <p className="text-xs text-muted-foreground font-medium mt-0.5">{stat.label}</p>
+                  <p className="text-xl sm:text-2xl font-black text-primary tabular-nums">{stat.value}</p>
+                  <p className="text-[10px] sm:text-xs text-muted-foreground font-medium mt-0.5">{stat.label}</p>
                 </div>
               ))}
             </div>
           </div>
         </ScrollReveal>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
           {tools.map((tool, i) => (
             <ScrollReveal key={tool.href} delay={i * 70} direction="scale">
               <a
@@ -108,7 +108,7 @@ const ToolsShowcase = () => {
         {/* Bottom CTA - links to /tools */}
         <ScrollReveal delay={600}>
           <div className="mt-14 text-center">
-            <div className="inline-flex flex-col items-center gap-3 p-8 rounded-3xl border border-border bg-card/80 backdrop-blur-sm">
+            <div className="inline-flex flex-col items-center gap-3 p-6 sm:p-8 rounded-3xl border border-border bg-card/80 backdrop-blur-sm">
               <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary to-accent flex items-center justify-center shadow-lg shadow-primary/20 mb-1">
                 <Cpu className="w-7 h-7 text-primary-foreground" />
               </div>

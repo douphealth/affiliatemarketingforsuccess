@@ -218,7 +218,7 @@ const QuizModule = () => {
             </div>
 
             {/* Quiz card */}
-            <div className="rounded-3xl border border-border bg-card/90 backdrop-blur-sm p-8 md:p-10 shadow-2xl shadow-primary/5 relative overflow-hidden">
+            <div className="rounded-3xl border border-border bg-card/90 backdrop-blur-sm p-5 sm:p-8 md:p-10 shadow-2xl shadow-primary/5 relative overflow-hidden">
               <div className="absolute -top-20 -right-20 w-40 h-40 bg-primary/10 rounded-full blur-3xl pointer-events-none" />
               <div className="absolute -bottom-20 -left-20 w-40 h-40 bg-accent/10 rounded-full blur-3xl pointer-events-none" />
 
@@ -308,14 +308,14 @@ const QuizModule = () => {
 
                 {step === 2 && results.length > 0 && (
                   <div>
-                    <div className="flex items-center justify-between mb-4">
+                    <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 mb-4">
                       <div className="flex items-center gap-3">
-                        <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-primary to-accent flex items-center justify-center shadow-lg shadow-primary/20">
-                          <Sparkles className="w-6 h-6 text-primary-foreground" />
+                        <div className="w-10 sm:w-12 h-10 sm:h-12 rounded-2xl bg-gradient-to-br from-primary to-accent flex items-center justify-center shadow-lg shadow-primary/20 flex-shrink-0">
+                          <Sparkles className="w-5 sm:w-6 h-5 sm:h-6 text-primary-foreground" />
                         </div>
                         <div>
-                          <h3 className="text-xl font-extrabold">Your Personalized Path</h3>
-                          <p className="text-sm text-muted-foreground">5 guides in order — follow the path to success</p>
+                          <h3 className="text-lg sm:text-xl font-extrabold">Your Personalized Path</h3>
+                          <p className="text-xs sm:text-sm text-muted-foreground">5 guides in order — follow the path</p>
                         </div>
                       </div>
                       <button onClick={reset} className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors active:scale-[0.95] px-3 py-1.5 rounded-lg hover:bg-secondary/50">

@@ -14,7 +14,7 @@ const EmailCapture = () => (
   <section className="py-28">
     <div className="container">
       <ScrollReveal>
-        <div className="relative rounded-2xl border border-primary/20 bg-gradient-to-br from-primary/10 via-card to-card p-10 md:p-16 overflow-hidden">
+        <div className="relative rounded-2xl border border-primary/20 bg-gradient-to-br from-primary/10 via-card to-card p-6 sm:p-10 md:p-16 overflow-hidden">
           <div className="absolute -top-32 -right-32 w-64 h-64 bg-primary/10 rounded-full blur-3xl pointer-events-none" />
 
           <div className="relative z-10 max-w-2xl">

@@ -134,7 +134,7 @@ const NicheProfiler = () => {
             </div>
 
             {!selected ? (
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4">
                 {niches.map((niche) => (
                   <button
                     key={niche.name}
@@ -156,12 +156,12 @@ const NicheProfiler = () => {
             ) : (
               <div className="rounded-3xl border border-border bg-card/90 backdrop-blur-sm shadow-2xl shadow-accent/5 overflow-hidden">
                 {/* Header */}
-                <div className="p-8 border-b border-border bg-gradient-to-r from-accent/5 via-transparent to-accent/5">
-                  <div className="flex items-start justify-between">
-                    <div className="flex items-center gap-4">
-                      <span className="text-4xl">{selected.emoji}</span>
+                <div className="p-5 sm:p-8 border-b border-border bg-gradient-to-r from-accent/5 via-transparent to-accent/5">
+                  <div className="flex flex-col sm:flex-row items-start justify-between gap-3">
+                    <div className="flex items-center gap-3 sm:gap-4">
+                      <span className="text-3xl sm:text-4xl">{selected.emoji}</span>
                       <div>
-                        <h3 className="text-2xl font-extrabold">{selected.name}</h3>
+                        <h3 className="text-xl sm:text-2xl font-extrabold">{selected.name}</h3>
                         <span className={`inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-bold mt-1 ${
                           selected.difficulty === "Low" ? "bg-emerald-500/15 text-emerald-400" :
                           selected.difficulty === "Medium" ? "bg-primary/15 text-primary" :
@@ -178,23 +178,23 @@ const NicheProfiler = () => {
                 </div>
 
                 {/* Stats grid */}
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-border">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-border text-center">
                   {[
                     { icon: DollarSign, label: "Avg Commission", value: selected.avgCommission, color: "text-emerald-400" },
                     { icon: TrendingUp, label: "12-Mo Earnings", value: selected.earning12mo, color: "text-primary" },
                     { icon: Users, label: "Monthly Searches", value: selected.monthlySearchVolume, color: "text-accent" },
                     { icon: BarChart3, label: "Competition", value: `${selected.competition}/5`, color: "text-orange-400" },
                   ].map((stat) => (
-                    <div key={stat.label} className="bg-card p-5 text-center">
-                      <stat.icon className={`w-5 h-5 ${stat.color} mx-auto mb-2`} />
-                      <p className="text-lg font-extrabold tabular-nums">{stat.value}</p>
+                    <div key={stat.label} className="bg-card p-3 sm:p-5 text-center">
+                      <stat.icon className={`w-4 sm:w-5 h-4 sm:h-5 ${stat.color} mx-auto mb-1 sm:mb-2`} />
+                      <p className="text-sm sm:text-lg font-extrabold tabular-nums break-words">{stat.value}</p>
                       <p className="text-xs text-muted-foreground mt-0.5">{stat.label}</p>
                     </div>
                   ))}
                 </div>
 
                 {/* Top programs */}
-                <div className="p-8 border-b border-border">
+                <div className="p-5 sm:p-8 border-b border-border">
                   <h4 className="text-sm font-bold mb-3 flex items-center gap-2">
                     <Star className="w-4 h-4 text-primary" /> Top Affiliate Programs
                   </h4>
@@ -208,7 +208,7 @@ const NicheProfiler = () => {
                 </div>
 
                 {/* Recommended reading */}
-                <div className="p-8">
+                <div className="p-5 sm:p-8">
                   <h4 className="text-sm font-bold mb-4 flex items-center gap-2">
                     <Zap className="w-4 h-4 text-accent" /> Start with these guides
                   </h4>

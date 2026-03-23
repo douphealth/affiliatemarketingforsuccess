@@ -236,7 +236,7 @@ const ReadinessQuiz = () => {
               <div className="absolute -bottom-20 -left-20 w-40 h-40 bg-accent/8 rounded-full blur-3xl pointer-events-none" />
 
               {!done ? (
-                <div className="p-8 md:p-10">
+                <div className="p-5 sm:p-8 md:p-10">
                   {/* Progress */}
                   <div className="flex items-center gap-1.5 mb-2">
                     {questions.map((_, i) => (
@@ -282,9 +282,9 @@ const ReadinessQuiz = () => {
               ) : (
                 <div>
                   {/* Score hero */}
-                  <div className="p-8 md:p-10 text-center border-b border-border bg-gradient-to-br from-secondary/30 to-transparent">
+                  <div className="p-5 sm:p-8 md:p-10 text-center border-b border-border bg-gradient-to-br from-secondary/30 to-transparent">
                     <div className="relative inline-block mb-4">
-                      <svg width="160" height="160" viewBox="0 0 160 160" className="drop-shadow-2xl">
+                      <svg width="130" height="130" viewBox="0 0 160 160" className="drop-shadow-2xl sm:w-[160px] sm:h-[160px]">
                         <circle cx="80" cy="80" r="70" fill="none" stroke="hsl(var(--secondary))" strokeWidth="8" />
                         <circle
                           cx="80" cy="80" r="70"
@@ -299,7 +299,7 @@ const ReadinessQuiz = () => {
                         />
                       </svg>
                       <div className="absolute inset-0 flex flex-col items-center justify-center">
-                        <span className="text-5xl font-black tabular-nums">{scoreAnimated}</span>
+                        <span className="text-4xl sm:text-5xl font-black tabular-nums">{scoreAnimated}</span>
                         <span className="text-sm font-bold text-muted-foreground">/ 100</span>
                       </div>
                     </div>
@@ -316,9 +316,9 @@ const ReadinessQuiz = () => {
                   </div>
 
                   {/* Skill breakdown */}
-                  <div className="p-8 md:p-10 border-b border-border">
+                  <div className="p-5 sm:p-8 md:p-10 border-b border-border">
                     <p className="text-sm font-bold mb-4">📊 Your skill breakdown:</p>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 sm:gap-3">
                       {categoryScores.map((cs) => (
                         <div key={cs.category} className="p-3 rounded-xl bg-secondary/30 border border-border text-center">
                           <div className="flex items-center justify-center gap-1 mb-1">
@@ -345,7 +345,7 @@ const ReadinessQuiz = () => {
                   </div>
 
                   {/* Resources */}
-                  <div className="p-8 md:p-10">
+                  <div className="p-5 sm:p-8 md:p-10">
                     <p className="text-sm font-bold mb-4 flex items-center gap-2">
                       <span>📚</span> Your recommended action plan:
                     </p>

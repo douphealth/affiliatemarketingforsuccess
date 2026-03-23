@@ -74,9 +74,9 @@ const TrendingCarousel = () => {
 
       <div className="container relative z-10">
         <ScrollReveal>
-          <div className="flex items-center justify-between mb-10">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-8 sm:mb-10">
             <div>
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/30 bg-primary/10 mb-4">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/30 bg-primary/10 mb-3 sm:mb-4">
                 <Flame className="w-3.5 h-3.5 text-primary" />
                 <span className="text-sm font-semibold text-primary tracking-wide">LIVE FEED</span>
                 <span className="relative flex h-2 w-2">
@@ -84,7 +84,7 @@ const TrendingCarousel = () => {
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-accent" />
                 </span>
               </div>
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-balance">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-balance">
                 Trending right now
               </h2>
               <p className="text-muted-foreground mt-2 max-w-md text-pretty">
@@ -118,7 +118,7 @@ const TrendingCarousel = () => {
                 href={article.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex-shrink-0 w-[340px] rounded-2xl border border-border bg-card/80 backdrop-blur-sm hover:border-primary/40 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-500 active:scale-[0.97] overflow-hidden"
+                className="group flex-shrink-0 w-[280px] sm:w-[340px] rounded-2xl border border-border bg-card/80 backdrop-blur-sm hover:border-primary/40 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-500 active:scale-[0.97] overflow-hidden"
                 onMouseEnter={() => setIsPaused(true)}
                 onMouseLeave={() => setIsPaused(false)}
               >

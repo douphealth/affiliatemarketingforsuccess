@@ -289,12 +289,12 @@ const TopicClusterHub = () => {
         </ScrollReveal>
 
         <ScrollReveal delay={80}>
-          <div className="flex flex-wrap justify-center gap-2 mb-12">
+          <div className="flex flex-wrap justify-center gap-1.5 sm:gap-2 mb-8 sm:mb-12">
             {tabs.map((t) => (
-              <button
-                key={t.key}
-                onClick={() => { setActiveTab(t.key); setExpandedSub(null); }}
-                className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 active:scale-[0.96] ${
+                <button
+                  key={t.key}
+                  onClick={() => { setActiveTab(t.key); setExpandedSub(null); }}
+                  className={`px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium transition-all duration-200 active:scale-[0.96] ${
                   activeTab === t.key ? "category-pill-active" : "bg-secondary text-secondary-foreground hover:bg-surface-hover"
                 }`}
               >
