@@ -143,12 +143,14 @@ const AIToolQuiz = () => {
                     })}
                   </div>
                 </div>
-              ) : (
+              ) : (() => {
+                const MetaIcon = meta!.icon;
+                return (
                 <div>
                   <div className="flex items-start justify-between mb-6">
                     <div className="flex items-center gap-3">
                       <div className={`w-12 h-12 rounded-2xl bg-gradient-to-br ${meta!.gradient} flex items-center justify-center shadow-lg`}>
-                        <meta!.icon className="w-6 h-6 text-white" />
+                        <MetaIcon className="w-6 h-6 text-white" />
                       </div>
                       <div>
                         <h3 className="text-xl font-extrabold">{result.title}</h3>
