@@ -178,7 +178,7 @@ const NicheProfiler = () => {
                 </div>
 
                 {/* Stats grid */}
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-border">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-border text-center">
                   {[
                     { icon: DollarSign, label: "Avg Commission", value: selected.avgCommission, color: "text-emerald-400" },
                     { icon: TrendingUp, label: "12-Mo Earnings", value: selected.earning12mo, color: "text-primary" },
