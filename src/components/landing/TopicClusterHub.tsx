@@ -289,7 +289,7 @@ const TopicClusterHub = () => {
         </ScrollReveal>
 
         <ScrollReveal delay={80}>
-          <div className="flex flex-wrap justify-center gap-2 mb-12">
+          <div className="flex flex-wrap justify-center gap-1.5 sm:gap-2 mb-8 sm:mb-12">
             {tabs.map((t) => (
               <button
                 key={t.key}
