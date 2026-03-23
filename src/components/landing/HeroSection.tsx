@@ -45,7 +45,7 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/80 to-background" />
       </div>
 
-      <div className="container relative z-10 py-28">
+      <div className="container relative z-10 py-16 sm:py-28">
         <div className="max-w-3xl">
           <ScrollReveal delay={0}>
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/30 bg-primary/10 mb-8">
