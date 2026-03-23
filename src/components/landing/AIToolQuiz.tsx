@@ -110,7 +110,7 @@ const AIToolQuiz = () => {
             </div>
 
             {/* Quiz card */}
-            <div className="rounded-3xl border border-border bg-card/90 backdrop-blur-sm p-8 md:p-10 shadow-2xl shadow-primary/5 relative overflow-hidden">
+            <div className="rounded-3xl border border-border bg-card/90 backdrop-blur-sm p-5 sm:p-8 md:p-10 shadow-2xl shadow-primary/5 relative overflow-hidden">
               <div className="absolute -top-20 -right-20 w-40 h-40 bg-accent/8 rounded-full blur-3xl pointer-events-none" />
               <div className="absolute -bottom-20 -left-20 w-40 h-40 bg-primary/8 rounded-full blur-3xl pointer-events-none" />
 
