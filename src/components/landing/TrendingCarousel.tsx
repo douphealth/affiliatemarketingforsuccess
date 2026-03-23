@@ -74,9 +74,9 @@ const TrendingCarousel = () => {
 
       <div className="container relative z-10">
         <ScrollReveal>
-          <div className="flex items-center justify-between mb-10">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-8 sm:mb-10">
             <div>
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/30 bg-primary/10 mb-4">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/30 bg-primary/10 mb-3 sm:mb-4">
                 <Flame className="w-3.5 h-3.5 text-primary" />
                 <span className="text-sm font-semibold text-primary tracking-wide">LIVE FEED</span>
                 <span className="relative flex h-2 w-2">
