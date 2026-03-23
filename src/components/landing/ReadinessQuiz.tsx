@@ -299,7 +299,7 @@ const ReadinessQuiz = () => {
                         />
                       </svg>
                       <div className="absolute inset-0 flex flex-col items-center justify-center">
-                        <span className="text-5xl font-black tabular-nums">{scoreAnimated}</span>
+                        <span className="text-4xl sm:text-5xl font-black tabular-nums">{scoreAnimated}</span>
                         <span className="text-sm font-bold text-muted-foreground">/ 100</span>
                       </div>
                     </div>
