@@ -345,7 +345,7 @@ const ReadinessQuiz = () => {
                   </div>
 
                   {/* Resources */}
-                  <div className="p-8 md:p-10">
+                  <div className="p-5 sm:p-8 md:p-10">
                     <p className="text-sm font-bold mb-4 flex items-center gap-2">
                       <span>📚</span> Your recommended action plan:
                     </p>
