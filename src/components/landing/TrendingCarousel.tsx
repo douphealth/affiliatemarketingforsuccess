@@ -66,8 +66,8 @@ const TrendingCarousel = () => {
                 <Flame className="w-3.5 h-3.5 text-primary" />
                 <span className="text-sm font-semibold text-primary tracking-wide">LIVE FEED</span>
                 <span className="relative flex h-2 w-2">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75" />
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-accent" />
                 </span>
               </div>
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-balance">
