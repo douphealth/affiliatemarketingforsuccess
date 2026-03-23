@@ -194,7 +194,7 @@ const NicheProfiler = () => {
                 </div>
 
                 {/* Top programs */}
-                <div className="p-8 border-b border-border">
+                <div className="p-5 sm:p-8 border-b border-border">
                   <h4 className="text-sm font-bold mb-3 flex items-center gap-2">
                     <Star className="w-4 h-4 text-primary" /> Top Affiliate Programs
                   </h4>
