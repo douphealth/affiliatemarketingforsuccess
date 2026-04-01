@@ -18,11 +18,7 @@ const FooterSection = () => {
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
               <div className="flex items-center gap-2 mb-2">
-                <span className="w-2 h-2 rounded-full bg-primary" />
-                <span className="text-sm font-bold tracking-wide">
-                  <span className="text-primary">AFFILIATE MARKETING</span>{" "}
-                  <span className="text-muted-foreground">FOR SUCCESS</span>
-                </span>
+                <img src="/logo.png" alt="Affiliate Marketing for Success" className="h-8 w-auto" />
               </div>
               <p className="text-xs text-muted-foreground">
                 Practical systems for traffic, content, and monetization. © {new Date().getFullYear()}

@@ -29,11 +29,7 @@ const NavBar = () => {
     >
       <div className="container flex items-center justify-between h-16">
         <a href={BASE} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-          <span className="w-2.5 h-2.5 rounded-full bg-primary" />
-          <span className="text-sm font-bold tracking-wide">
-            <span className="text-primary">AFFILIATE MARKETING</span>{" "}
-            <span className="text-foreground">FOR SUCCESS</span>
-          </span>
+          <img src="/logo.png" alt="Affiliate Marketing for Success" className="h-8 w-auto" />
         </a>
 
         <nav className="hidden md:flex items-center gap-6">
